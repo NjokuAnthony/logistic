@@ -7,8 +7,8 @@ const selectedTheme = localStorage.getItem('selected-theme');
 const selectedIcon = localStorage.getItem('selected-icon');
 
 //method//
-const getCurrentTheme = () => document.body.classList.contains(dark) ? 'dark' : 'light'
-const getCurrentIcon = () => themeButton.classList.contains(dark) ? 'fa-toggle-on' : 'fa-toggle-off'
+const getCurrentTheme = () => document.body.classList.contains(darkTheme) ? 'dark' : 'light'
+const getCurrentIcon = () => themeButton.classList.contains(icon) ? 'fa-toggle-on' : 'fa-toggle-off'
 
 // We validate if the user previously chose a topic
 if (selectedTheme) {
