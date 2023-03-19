@@ -56,6 +56,11 @@
         font-weight: bold;
         color: #fff;
         background: #b04949;
+
+        &:hover{
+            background: #fab3b3;
+            color: #000;
+        }
     }
 }
 
@@ -93,6 +98,12 @@
             color: #fff;
             background: #b04949;
             box-shadow: 5px 5px 5px grey;
+
+            &:hover{
+                width: 180px;
+                background: #fab3b3;
+                color: #000;
+            }
 
         }
     }
@@ -139,9 +150,9 @@ article{
     &__blob{
         fill: #fab3b3;
     }
-    // &__color{
-    //     fill: rgb(41, 168, 41);
-    // }
+    &__color{
+        fill: #b04949;
+    }
     
 }
 
@@ -167,8 +178,8 @@ main {
 }
 
 .alone{
-    padding: 10 200px;
-    
+    padding: 15px 200px;
+    text-align: center;
 }
 
 section{
@@ -177,6 +188,7 @@ section{
     padding: 10px 200px;
     align-items: center;
     text-align: center;
+    margin: 10px 80px;
 
     .services__img{
         width: 135px;
@@ -190,10 +202,18 @@ section{
         border-radius: 10px;
         margin-top: 20px;
         font-weight: bold;
+        color: #fff;
+
+        &:hover{
+            background: #fab3b3;
+            color: #000;
+            width: 180px;
+            text-transform: uppercase;
+        }
     }
 
     .left{
-        width: 350px;
+        width: 300px;
         // border: 0px solid grey;
         border-radius: 10px;
         box-shadow: 3px 3px 3px 3px grey;
@@ -201,7 +221,7 @@ section{
     }
 
     .center{
-        width: 350px;
+        width: 300px;
         // border: 0px solid grey;
         border-radius: 10px;
         box-shadow: 3px 3px 3px 3px grey;
@@ -209,13 +229,53 @@ section{
     }
 
     .right{
-        width: 350px;
+        width: 300px;
         // border: 0px solid grey;
         border-radius: 10px;
         box-shadow: 3px 3px 3px 3px grey;
         padding: 20px;
     }
 
+}
+
+article .google{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 200px;
+    align-items: center;
+    text-align: center;
+    margin: 10px 80px;
+    
+    .content{
+        width: 50%;
+        padding: 20px;
+        h2{
+            font-size: 30px;
+            margin-bottom: 20px;
+        }
+        .btn{
+            width: 150px;
+            height: 40px;
+            background: #b04949;
+            border-radius: 10px;
+            margin-top: 20px;
+            font-weight: bold;
+            color: #fff;
+    
+            &:hover{
+                background: #fab3b3;
+                color: #000;
+                width: 180px;
+            }
+        }
+    }
+
+    .picture{
+        width: 50%;height: auto;
+
+    }
+    
+    
 }
 
 
