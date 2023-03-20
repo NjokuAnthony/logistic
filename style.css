@@ -286,7 +286,7 @@ section .right {
   text-align: center;
   font-size: 20px;
   font-weight: bold;
-  color: #fff;
+  color: #000;
   background: #b04949;
   -webkit-box-shadow: 5px 5px 5px grey;
           box-shadow: 5px 5px 5px grey;
@@ -296,7 +296,6 @@ section .right {
 .google .content .btn:hover {
   width: 180px;
   background: #fab3b3;
-  color: #000;
 }
 
 .google .picture {
@@ -306,5 +305,52 @@ section .right {
 
 .google .picture .svg__img {
   width: 80%;
+}
+
+.contact {
+  padding: 50px 200px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 50px;
+}
+
+.contact .left {
+  width: 50%;
+}
+
+.contact .left h1 {
+  margin-bottom: 20px;
+}
+
+.contact .center {
+  width: 50%;
+}
+
+.contact .center p {
+  line-height: 50px;
+}
+
+.contact .center span {
+  font-weight: bold;
+}
+
+.contact .btn {
+  width: 15%;
+  padding: 10px 20px;
+  border-radius: 20px;
+  font-weight: bold;
+  background: #b04949;
+}
+
+.contact .btn:hover {
+  width: 18%;
+  background: #fab3b3;
 }
 /*# sourceMappingURL=style.css.map */

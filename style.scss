@@ -263,7 +263,7 @@ section{
             text-align: center;
             font-size: 20px;
             font-weight: bold;
-            color: #fff;
+            color: #000;
             background: #b04949;
             box-shadow: 5px 5px 5px grey;
             margin: 15px;
@@ -271,7 +271,7 @@ section{
             &:hover{
                 width: 180px;
                 background: #fab3b3;
-                color: #000;
+                // color: #000;
             }
         }
     }
@@ -286,4 +286,45 @@ section{
     }
 }
 
+.contact{
+    padding: 50px 200px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 50px;
+
+    .left{
+        width: 50%;
+
+        h1{
+            margin-bottom: 20px;
+        }
+    }
+    .center{
+        width: 50%;
+
+        p{
+            line-height: 50px;
+        }
+
+        span{
+            font-weight: bold;
+        }
+    }
+    .btn{
+        width: 15%;
+        padding: 10px 20px;
+        border-radius: 20px;
+        font-weight: bold;
+        background: #b04949;
+
+        &:hover{
+            width: 18%;
+            background: #fab3b3;
+        }
+
+
+    }
+
+}
 
