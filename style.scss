@@ -5,9 +5,9 @@
 
     margin: 0; padding: 0;
     box-sizing: border-box;
+    cursor: pointer;
     // overflow: hidden;
     font-family: 'poppins', sans-serif;
-    // color: green;
     transition: .5s;
 
     @media(max-width: 576px){
@@ -15,6 +15,10 @@
         padding: 0;
         box-sizing: border-box;
     }
+}
+
+html{
+    scroll-behavior: smooth;
 }
 
 // .grey{
@@ -34,7 +38,7 @@
     justify-content: space-around;
     align-items: center;
     font-weight: bold;
-    box-shadow: 1px 3px 3px rgba(0, 0, 0, 0.15);
+    box-shadow: 1px 3px 5px grey;
     // text-align: center;
 
     @media(max-width: 576px){
@@ -80,6 +84,10 @@
         color: #fff;
         background: #b04949;
 
+        // @media(max-width: 576px){
+        //     display: none;
+        // }
+
         &:hover{
             background: #fab3b3;
             color: #000;
@@ -95,7 +103,7 @@
     align-items: center;
     gap: 60px;
     @media(max-width: 576px){
-        width: 100vw;
+        // width: 100vw;
         padding: 100px 10px 10px 10px;
         flex-direction: column;
         align-items: center;
@@ -162,7 +170,7 @@ article{
     gap: 100px;
 
     @media(max-width: 576px){
-        width: 100vw;
+        width: 100%;
         padding: 100px 10px 10px 10px;
         flex-direction: column;
         align-items: center;
@@ -314,28 +322,28 @@ section{
     }
 
     .center{
-        // width: 300px;
+        width: 300px;
         // border: 0px solid grey;
         border-radius: 10px;
         box-shadow: 3px 3px 3px 5px grey;
         padding: 20px;
 
         @media(max-width: 576px){
-            // width: 90%;
+            width: 90%;
             margin-bottom: 30px;
             // padding: 0px 10px 10px 10px;
         }
     }
 
     .right{
-        // width: 300px;
+        width: 300px;
         // border: 0px solid grey;
         border-radius: 10px;
         box-shadow: 3px 3px 3px 5px grey;
         padding: 20px;
 
         @media(max-width: 576px){
-            // width: 90%;
+            width: 90%;
             margin-bottom: 30px;
             // padding: 0px 10px 10px 10px;
             
@@ -528,6 +536,7 @@ footer{
             padding: 0px;
         }
 
+
         .footer2{
             display: flex;
             justify-content: space-between;
@@ -575,5 +584,29 @@ footer{
             text-align: center;
         }
     }
+}
+
+.arrow{
+    width: 25px;
+    height: 25px;
+    position: fixed;
+    display: inline-flex;
+    z-index: 99;
+    bottom: -20%;
+    right: 3rem;
+    border-radius: 5px;
+    text-align: center;
+    padding: 5px;
+    margin: 5px;
+    // font-weight: bold;
+    background: #b04949;
+
+    @media(max-width: 576px){
+        right: 1rem;
+    }
+}
+
+.showarrow{
+    bottom: 3rem;
 }
 

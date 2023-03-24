@@ -9,6 +9,7 @@
   padding: 0;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+  cursor: pointer;
   font-family: 'poppins', sans-serif;
   -webkit-transition: .5s;
   transition: .5s;
@@ -21,6 +22,10 @@
     -webkit-box-sizing: border-box;
             box-sizing: border-box;
   }
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 .nav-bar {
@@ -38,8 +43,8 @@
       -ms-flex-align: center;
           align-items: center;
   font-weight: bold;
-  -webkit-box-shadow: 1px 3px 3px rgba(0, 0, 0, 0.15);
-          box-shadow: 1px 3px 3px rgba(0, 0, 0, 0.15);
+  -webkit-box-shadow: 1px 3px 5px grey;
+          box-shadow: 1px 3px 5px grey;
 }
 
 @media (max-width: 576px) {
@@ -109,7 +114,6 @@
 
 @media (max-width: 576px) {
   .container {
-    width: 100vw;
     padding: 100px 10px 10px 10px;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -192,7 +196,7 @@ article {
 
 @media (max-width: 576px) {
   article {
-    width: 100vw;
+    width: 100%;
     padding: 100px 10px 10px 10px;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -396,6 +400,7 @@ section .left {
 }
 
 section .center {
+  width: 300px;
   border-radius: 10px;
   -webkit-box-shadow: 3px 3px 3px 5px grey;
           box-shadow: 3px 3px 3px 5px grey;
@@ -404,11 +409,13 @@ section .center {
 
 @media (max-width: 576px) {
   section .center {
+    width: 90%;
     margin-bottom: 30px;
   }
 }
 
 section .right {
+  width: 300px;
   border-radius: 10px;
   -webkit-box-shadow: 3px 3px 3px 5px grey;
           box-shadow: 3px 3px 3px 5px grey;
@@ -417,6 +424,7 @@ section .right {
 
 @media (max-width: 576px) {
   section .right {
+    width: 90%;
     margin-bottom: 30px;
   }
 }
@@ -747,5 +755,32 @@ footer .last {
             justify-content: center;
     text-align: center;
   }
+}
+
+.arrow {
+  width: 25px;
+  height: 25px;
+  position: fixed;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  z-index: 99;
+  bottom: -20%;
+  right: 3rem;
+  border-radius: 5px;
+  text-align: center;
+  padding: 5px;
+  margin: 5px;
+  background: #b04949;
+}
+
+@media (max-width: 576px) {
+  .arrow {
+    right: 1rem;
+  }
+}
+
+.showarrow {
+  bottom: 3rem;
 }
 /*# sourceMappingURL=style.css.map */

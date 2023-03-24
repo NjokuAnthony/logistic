@@ -27,3 +27,14 @@ if (selectedTheme) {
       localStorage.setItem('selected-icon', getCurrentIcon())
   })
   
+
+  function showarrow(){
+      let arroW = document.querySelector('#arrow');
+      if(this.scrollY >= 560){
+          arroW.classList.add("showarrow");
+        }
+          else{
+            arroW.classList.remove("showarrow");
+          }
+  }
+  window.addEventListener("scroll", showarrow);
