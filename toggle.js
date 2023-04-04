@@ -38,3 +38,10 @@ if (selectedTheme) {
           }
   }
   window.addEventListener("scroll", showarrow);
+
+
+  let menuBar = document.querySelector('.bx-menu');
+
+menuBar.onclick = () => {
+    cart.classList.add("active"); 
+};

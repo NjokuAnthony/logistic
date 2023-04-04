@@ -84,15 +84,28 @@ html{
         color: #fff;
         background: #b04949;
 
-        // @media(max-width: 576px){
-        //     display: none;
-        // }
+        @media(max-width: 576px){
+            display: none;
+        }
 
         &:hover{
             background: #fab3b3;
             color: #000;
         }
+        
     }
+    i.bx .active{
+        width: 50px;
+        height: auto;
+        color: #000;
+        display: none;
+        cursor: pointer;
+
+        @media(max-width: 576px){
+            display: block;
+        }
+    }
+ 
 }
 
 .container{

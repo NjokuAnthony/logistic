@@ -92,9 +92,29 @@ html {
   background: #b04949;
 }
 
+@media (max-width: 576px) {
+  .nav-bar .btn {
+    display: none;
+  }
+}
+
 .nav-bar .btn:hover {
   background: #fab3b3;
   color: #000;
+}
+
+.nav-bar i.bx .active {
+  width: 50px;
+  height: auto;
+  color: #000;
+  display: none;
+  cursor: pointer;
+}
+
+@media (max-width: 576px) {
+  .nav-bar i.bx .active {
+    display: block;
+  }
 }
 
 .container {
